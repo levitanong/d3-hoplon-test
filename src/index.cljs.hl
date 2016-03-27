@@ -1,0 +1,11 @@
+(page "index.html")
+
+(html
+ (head
+  (link :href "app.css" :rel "stylesheet")
+  (script :src "d3.js"))
+ (body
+  (h1 "Hello, Hoplon!")
+  (div :id "test")
+  (with-let [a (div)]
+    (.log js.console (.-parentNode a)))))
